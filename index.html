@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potwierdzenie obecności – Paweł i Klaudia</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+  <h1>Potwierdź swoją obecność</h1>
+
+  <form action="https://formsubmit.co/pawel.nieweglowski01@gmail.com" method="POST">
+    <!-- FormSubmit hidden inputs -->
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="https://nieweglp.github.io/rsvp/thanks.html">
+
+    <label>Imię i nazwisko:
+      <input type="text" name="Imię i nazwisko" required />
+    </label>
+
+    <label>Czy będziesz obecny/a?
+      <select name="Obecność" required>
+        <option value="">Wybierz...</option>
+        <option value="Tak">Tak</option>
+        <option value="Nie">Nie</option>
+      </select>
+    </label>
+
+    <label>Dodatkowe uwagi (np. dieta, dzieci):
+      <textarea name="Uwagi"></textarea>
+    </label>
+
+    <div class="g-recaptcha" data-sitekey="TWÓJ_PUBLICZNY_KLUCZ_SITE_KEY"></div>
+
+    <button type="submit">Wyślij</button>
+  </form>
+
+  <div class="footer">
+    Dziękujemy za odpowiedź! 💌
+  </div>
+
+</body>
+</html>
