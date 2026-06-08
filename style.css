@@ -114,6 +114,62 @@ button:hover {
   font-style: italic;
 }
 
+.locations {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: var(--tekst);
+}
+
+.locations h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--zielony-szalwia);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.location-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--pudrowy-roz);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.location-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--zloty);
+}
+
+.location-card p {
+  margin: 0.3rem 0;
+}
+
+.location-card a {
+  color: var(--zielony-szalwia);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.location-card a:hover {
+  text-decoration: underline;
+}
+
+.map-embed {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+}
+
 .container {
   text-align: center;
 }
