@@ -8,61 +8,48 @@
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  
-  <div id="opis">
-    Wesele Wiżajny msza 17.00 dnia 25.07.2026
-    <div class="location-card">
-      <h3>Kościół św. Teresy od Awili</h3>
-      <p>Msza ślubna</p>
-      <p><a href="https://www.google.com/maps/place/St.+Teresa+of+Avila+Church/@54.3676629,22.8639372,17z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
-      <div class="map-embed">
-        <iframe
-          src="https://maps.google.com/maps?q=54.3683351,22.8667505&z=17&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa kościoła św. Teresy od Awili"
-        ></iframe>
-      </div>
-    </div>
-    Ślub Stodoła Kalinka
+  <div class="page-header">
+    <h1>Potwierdź swoją obecność</h1>
+    <p>Wesele w Wiżajnach: msza o 17:00, 25.07.2026, a przyjęcie w Stodole Kalinka. Na mapie poniżej znajdziesz wszystkie ważne miejsca w jednym widoku.</p>
   </div>
 
   <section class="locations">
-    <h2>Lokalizacje</h2>
+    <h2>Wszystkie lokalizacje w jednym miejscu</h2>
+    <p>Przyjęcie, kościół i dodatkowe noclegi znajdują się blisko siebie. Kliknij w wybrany punkt, aby otworzyć go w Google Maps.</p>
 
-    <div class="location-card">
-      <h3>Agroturystyka Kalinka</h3>
-      <p>Wesele i przyjęcie</p>
-      <p><a href="https://www.google.com/maps/place/Agroturystyka+Kalinka/@54.3675442,22.8597637,17z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
-      <div class="map-embed">
-        <iframe
-          src="https://maps.google.com/maps?q=54.3675442,22.8623386&z=17&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa Agroturystyka Kalinka"
-        ></iframe>
-      </div>
+    <div class="map-embed map-overview">
+      <iframe
+        src="https://maps.google.com/maps?q=Wi%C5%BCajny+Kalinka+Ranczo+Kalinka+St.+Teresa+of+Avila+Church&z=14&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa wszystkich lokalizacji"
+      ></iframe>
     </div>
 
-    <div class="location-card">
-      <h3>Ranczo Kalinka</h3>
-      <p>Druga lokalizacja noclegów</p>
-      <p><a href="https://www.google.com/maps/place/Ranczo+Kalinka/@54.390896,22.8541162,14.45z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
-      <div class="map-embed">
-        <iframe
-          src="https://maps.google.com/maps?q=54.3970252,22.8521084&z=15&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa Rancza Kalinka"
-        ></iframe>
+    <div class="locations-grid">
+      <div class="location-card">
+        <h3>Agroturystyka Kalinka</h3>
+        <p>Wesele i przyjęcie</p>
+        <p><a href="https://www.google.com/maps/place/Agroturystyka+Kalinka/@54.3675442,22.8597637,17z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
+      </div>
+
+      <div class="location-card">
+        <h3>Kościół św. Teresy od Awili</h3>
+        <p>Msza ślubna</p>
+        <p><a href="https://www.google.com/maps/place/St.+Teresa+of+Avila+Church/@54.3676629,22.8639372,17z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
+      </div>
+
+      <div class="location-card">
+        <h3>Ranczo Kalinka</h3>
+        <p>Druga lokalizacja noclegów</p>
+        <p><a href="https://www.google.com/maps/place/Ranczo+Kalinka/@54.390896,22.8541162,14.45z" target="_blank" rel="noopener">Zobacz w Google Maps</a></p>
       </div>
     </div>
-
   </section>
 
   <section class="gift-preferences">
     <h2>Prezenty</h2>
-    <p>Jeśli chcecie obdarować nas prezentem, najbardziej ucieszymy się z:</p>
+    <p>Jeśli chcecie nas obdarować, najbardziej ucieszymy się z:</p>
     <ul>
       <li>wina, kawy lub herbaty</li>
       <li>gotówki</li>
@@ -71,37 +58,55 @@
     </ul>
   </section>
 
-  <h1>Potwierdź swoją obecność</h1>
+  <section class="form-section">
+    <div class="form-card">
+      <h2>Pytania i kontakt</h2>
+      <p>Masz pytanie o dojazd, noclegi lub prezent? Napisz do nas.</p>
+      <form action="https://formsubmit.co/pawel.nieweglowski01@email.com" method="POST">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://nieweglp.github.io/rsvp/thanks.html">
 
-  <form action="https://formsubmit.co/pawel.nieweglowski01@email.com" method="POST">
-    <!-- FormSubmit hidden inputs -->
-    <input type="hidden" name="_captcha" value="true">
-    <input type="hidden" name="_next" value="https://nieweglp.github.io/rsvp/thanks.html">
+        <label>Imię i nazwisko:
+          <input type="text" name="Imię i nazwisko" required />
+        </label>
 
-    <label>Imię i nazwisko:
-      <input type="text" name="Imię i nazwisko" required />
-    </label>
+        <label>Twoje pytanie:
+          <textarea name="Pytanie" placeholder="Np. pytanie o dojazd, nocleg lub prezent"></textarea>
+        </label>
 
-    <label>Czy będziesz obecny/a?
-      <select name="Obecność" required>
-        <option value="">Wybierz...</option>
-        <option value="Tak">Tak</option>
-        <option value="Nie">Nie</option>
-      </select>
-    </label>
+        <div class="g-recaptcha" data-sitekey="6LcWaxQtAAAAABqZHFzMA75Wcg5y4N8j19CIvKXJ"></div>
+        <button type="submit">Wyślij pytanie</button>
+      </form>
+    </div>
 
-    <label>Dodatkowe uwagi (np. dieta):
-      <textarea name="Uwagi"></textarea>
-    </label>
+    <div class="form-card">
+      <h2>Potwierdź obecność</h2>
+      <p>Wypełnij formularz, aby potwierdzić swój udział na weselu.</p>
+      <form action="https://formsubmit.co/pawel.nieweglowski01@email.com" method="POST">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://nieweglp.github.io/rsvp/thanks.html">
 
-    <label>Masz pytanie? Napisz do nas:
-      <textarea name="Pytanie" placeholder="Np. pytanie o dojazd, nocleg lub cokolwiek"></textarea>
-    </label>
+        <label>Imię i nazwisko:
+          <input type="text" name="Imię i nazwisko" required />
+        </label>
 
-    <div class="g-recaptcha" data-sitekey="TWÓJ_PUBLICZNY_KLUCZ_SITE_KEY"></div>
+        <label>Czy będziesz obecny/a?
+          <select name="Obecność" required>
+            <option value="">Wybierz...</option>
+            <option value="Tak">Tak</option>
+            <option value="Nie">Nie</option>
+          </select>
+        </label>
 
-    <button type="submit">Wyślij</button>
-  </form>
+        <label>Dodatkowe uwagi (np. dieta):
+          <textarea name="Uwagi"></textarea>
+        </label>
+
+        <div class="g-recaptcha" data-sitekey="6LcWaxQtAAAAABqZHFzMA75Wcg5y4N8j19CIvKXJ"></div>
+        <button type="submit">Wyślij RSVP</button>
+      </form>
+    </div>
+  </section>
 
   <div class="footer">
     Dziękujemy za odpowiedź! 💌

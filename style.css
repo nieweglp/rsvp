@@ -106,12 +106,23 @@ button:hover {
   transform: translateY(-2px);
 }
 
-.footer {
-  margin-top: 3rem;
-  font-size: 1rem;
-  color: var(--tekst);
+.page-header {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--pudrowy-roz);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
-  font-style: italic;
+}
+
+.page-header p {
+  margin: 1rem auto 0;
+  max-width: 720px;
+  line-height: 1.75;
+  color: var(--tekst);
 }
 
 .locations {
@@ -119,6 +130,58 @@ button:hover {
   max-width: 900px;
   margin: 0 auto 2rem;
   color: var(--tekst);
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.map-overview iframe {
+  height: 360px;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--pudrowy-roz);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.form-card h2 {
+  margin-top: 0;
+  color: var(--zielony-szalwia);
+}
+
+.gift-preferences {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--pudrowy-roz);
+  border-radius: 20px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.gift-preferences ul {
+  margin-top: 0.8rem;
+  padding-left: 1.3rem;
+}
+
+.gift-preferences li {
+  margin-bottom: 0.5rem;
 }
 
 .locations h2 {
